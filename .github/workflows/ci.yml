@@ -22,7 +22,7 @@ jobs:
       - name: Init
         run: |
           sudo apt-get update
-          sudo apt-get -y install devscripts equivs python3-setuptools
+          sudo apt-get -y install devscripts equivs python3-setuptools dpkg-dev
           cd src
           sudo mk-build-deps -t "apt-get -y" -i debian/control
 
